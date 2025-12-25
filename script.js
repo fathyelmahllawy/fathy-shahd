@@ -1,4 +1,8 @@
-// 1. العداد من تاريخ 29 مايو 2022
+// حط السطرين دول في آخر ملف script.js عندك
+window.onload = function() {
+    document.getElementById('main-gallery-img').src = `images/img (1).jpg`;
+    document.getElementById('main-chat-img').src = `images/chat (1).jpg`;
+};// 1. العداد من تاريخ 29 مايو 2022
 const start = new Date("2022-05-29");
 function updateCounter() {
     const diff = Math.floor((new Date() - start) / (1000 * 60 * 60 * 24));
