@@ -1,0 +1,15 @@
+:root { --bg-pink: #fff0f5; --main-pink: #ff85b3; --dark-pink: #d63384; }
+body { margin: 0; font-family: 'Tajawal', sans-serif; background-color: var(--bg-pink); color: var(--dark-pink); text-align: center; }
+.navbar { background: var(--main-pink); color: white; padding: 15px; font-family: 'Dancing Script', cursive; font-size: 1.8rem; }
+.main-title, .sub-title { font-family: 'Dancing Script', cursive; font-size: 2.2rem; margin: 30px 0; }
+.timeline-container { display: flex; overflow-x: auto; gap: 15px; padding: 20px; }
+.timeline-card { background: white; min-width: 250px; padding: 20px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.gallery-slider { position: relative; width: 90%; max-width: 400px; margin: 0 auto; }
+.active-img { width: 100%; border-radius: 20px; border: 5px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.7); border: none; font-size: 1.5rem; padding: 10px; border-radius: 50%; cursor: pointer; z-index: 5; }
+.left { left: -15px; } .right { right: -15px; }
+.map-box iframe { width: 90%; height: 250px; border-radius: 20px; border: 5px solid white; }
+.video-container { width: 90%; max-width: 500px; margin: 20px auto; border-radius: 20px; overflow: hidden; border: 8px solid white; }
+video { width: 100%; display: block; }
+#days-count { font-size: 3.5rem; margin: 10px 0; font-family: 'Amiri', serif; }
+.music-player { position: fixed; bottom: 20px; right: 20px; background: white; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }

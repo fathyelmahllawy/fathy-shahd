@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Amiri:wght@700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">Us ❤️</div>
+    </nav>
+
+    <section class="section">
+        <h2 class="main-title">Our LOVE STORY timeline 💕</h2>
+        <div class="timeline-container">
+            <div class="timeline-card">
+                <h3>May 29, 2022</h3>
+                <p>The day we first met 🌸</p>
+            </div>
+            <div class="timeline-card highlight">
+                <h3>July 15, 2022</h3>
+                <p>The day we fell in love ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="sub-title">Our gallery 💖</h2>
+        <div class="gallery-slider">
+            <button class="arrow left" onclick="moveSlide(-1)">❮</button>
+            <div class="slide-container">
+                <img src="images/img1.jpg" class="active-img" id="main-gallery-img">
+            </div>
+            <button class="arrow right" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="sub-title">Our Places 💖</h2>
+        <div class="place-item">
+            <p>شارع شكري القوتلي، المحلة الكبرى</p>
+            <div class="map-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.467384115456!2d31.1643153!3d30.9702228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7be7f06d486d3%3A0xe74b1e84a0b329d8!2z2LTYp9ix2Lkg2LTYp9mD2LEg2KfZhNmC2YjYqtmE2Yog2YXYrdmE2Ycg2KfZhNmD2KjYsdmJ!5e0!3m2!1sar!2seg!4v1700000000000" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="main-title">Special WhatsApp Messages 💬</h2>
+        <div class="gallery-slider">
+            <button class="arrow left" onclick="moveChat(-1)">❮</button>
+            <div class="slide-container">
+                <img src="images/chat1.jpg" class="active-img" id="main-chat-img">
+            </div>
+            <button class="arrow right" onclick="moveChat(1)">❯</button>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="sub-title">Our Special Video 🎥</h2>
+        <div class="video-container">
+            <video controls><source src="our-video.mp4" type="video/mp4"></video>
+        </div>
+    </section>
+
+    <section class="section counter-area">
+        <p class="love-duration">We've been in love for</p>
+        <h2 id="days-count">0 days ❤️</h2>
+        <p class="since-date">(counting since May 29, 2022)</p>
+    </section>
+
+    <div class="music-player" onclick="toggleMusic()">🔊</div>
+    <audio id="bgMusic" loop autoplay><source src="music.mp3" type="audio/mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
